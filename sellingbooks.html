@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recycling Website</title>
+    <link rel="stylesheet" href="stylestore.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Book Bazaar</div> <!-- Logo Section -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bestsellers">bestseller</a></li>
+                <li><a href="sell.html">Sell Your Book</a></li>
+                <li><a href="#genres">Genres</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <form class="search-form">
+            <input type="text" placeholder="Search books..." />
+            <button type="submit">Search</button>
+        </form>
+        <div class="user-account">
+            <a href="index.php"><img src="https://i.pinimg.com/736x/f3/d1/ed/f3d1edf10d63c40e1fa06364176fa502.jpg" alt="User Account" /></a>
+        </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+    </header>
+    
+   
+    
+     <section id="home" class="hero">
+        <h1>Give Your Books a Second Life</h1>
+        <p>Sell your used books and earn money while helping others find great reads!</p>
+        <a href="#books" class="btn">Browse Books</a>
+        <a href="#sell" class="btn">Sell Your Book</a>
+        
+    </section>
+    <section id="sell">
+        <h2>Sell Your Book</h2>
+        <form>
+            <label for="title">Book Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+
+            <label for="price">Original Price:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="condition">Condition:</label>
+            <select id="condition" name="condition">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+            </select>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Choose a book you want to sell.</li>
+            <li>Provide details about the book and your original price.</li>
+            <li>Once sold, you will receive half of the selling price.</li>
+            <li>Buyers can purchase books for just ₹5-10.</li>
+            <li>Enjoy giving your old books a new home!</li>
+        </ol>
+    </section>
+
+  <!-- Featured Books Section -->
+<section id="featured-books">
+    <h2>Featured Books</h2>
+    <div class="featured-book">
+        <img src="https://5.imimg.com/data5/ANDROID/Default/2023/4/300895448/RB/VS/NN/139116043/product-jpeg-500x500.jpg" alt="Featured Book 1">
+        <h3>IT ENDS WITH US </h3>
+        <p>Price: ₹10</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+    <div class="featured-book">
+        <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/book/u/i/d/i-don-t-love-you-anymore-original-imah3hjvg8xadrnf.jpeg?q=90&crop=false" alt="Featured Book 2">
+        <h3>I don't love you any more </h3>
+        <p>Price: ₹10</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+    <div class="featured-book">
+        <img src="https://m.media-amazon.com/images/I/71Uud5Wu6TL._AC_UF1000,1000_QL80_.jpg" alt="Featured Book 3">
+        <h3>CRIME BITERS</h3>
+        <p>Price: ₹10</p>
+        <a href="#" class="btn">Buy Now</a>
+    </div>
+    </section> 
+    <section id="testimonials">
+        <h2>User Testimonials</h2>
+        <blockquote>
+            <p>"This website helped me sell my old books easily!" - User A</p>
+        </blockquote>
+        <blockquote>
+            <p>"I love finding affordable books here!" - User B</p>
+        </blockquote>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to giving books a second life. Our platform allows you to sell your used books and find great reads at affordable prices. Join us in promoting sustainability and accessibility in reading!</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Book Recycling Website. All Rights Reserved.</p>
+    </footer> 
+    
+</body>
+</html>
